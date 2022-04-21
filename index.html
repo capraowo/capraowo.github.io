@@ -1,0 +1,74 @@
+
+<head>
+	<link rel= "stylesheet" type= "text/css" href= "mystyle.css">
+</head>
+
+
+
+<h1>My Website</h1>
+<h2>Problem1.My name is Capra Chu</h2>
+<p>高中讀的是建中:</p>
+<p><a href="https://www2.ck.tp.edu.tw/">連結在這裡</a></p>
+
+<p>現在在台大電機系:</p>
+<p><a href="https://web.ee.ntu.edu.tw/">連結在這裡</a></p>
+
+
+
+<h2>Problem2.My hobbies</h2>
+<p>興趣1:看漫畫</p>
+<p><a href="https://shonenjumpplus.com/">宅弊了</a></p>
+<p>興趣2: 音樂</p>
+<p><a href="https://www.youtube.com/watch?v=TypU_nrE-7Y">讚</a></p>
+<p>興趣3: 看實況</p>
+<p><a href="https://www.twitch.tv/bbbb87">uwu</a></p>
+
+<h2>Problem3.Photo</h2>
+<img src="cat.jpg" width="400" height="600" alt="A cat">
+
+
+<h2>Problem4.Icon</h2>
+<head>
+<link rel="icon" href="icon.ico" type="image/x-icon" />
+</head>
+
+
+<h2>Problem5.music</h2>
+
+<audio controls>
+  <source src="FlowerDance.ogg" type="audio/ogg">
+Enjoy the music!
+</audio>
+
+<h2>Problem6.css</h2>
+<h1 style="color:blue;">用css把字變藍了欸╰(*°▽°*)╯</h1>
+
+
+<h2>Problem7.time and data</h2>
+
+
+<p id="date"></p>
+
+<script>
+setInterval(function(){
+date = new Date();
+seconds = date.getSeconds();
+minute = date.getMinutes();
+hour = date.getHours();
+day = date.getDay();
+ datenow = date.getDate();
+ month = date.getMonth();
+ year = date.getFullYear();
+document.getElementById('date').innerHTML = year+"-"+((month+1)%12)+"-"+datenow+"<br>"+hour+" : "+minute+" : "+seconds;
+},1000);
+</script>
+
+
+<h2>Problem8.Publish</h2>
+
+$ git add index.html
+
+$ git commit -m "add index"
+[master (root-commit) 80450b2] add index
+ 1 file changed, 10 insertions(+)
+ create mode 100644 index.html
